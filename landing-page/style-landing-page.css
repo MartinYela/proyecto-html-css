@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__principalBanner {
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+}
+.container__principalBanner--video {
+    opacity: 0.5;
+    width: 100%;
+}
+.container__principalBanner--smallText {
+    font-size: 0.8rem;
+}
+.container__principalBanner--bigText {
+    font-size: 1.8rem;
+}
+.container__principalBanner--text {
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color:  #1b1c20;
+    width: 80%;
+    /*color: white; */
+}
