@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style-form.css">
+    <title>Contacto</title>
+</head>
+<body>
+    // Mobile; breakpoint hasta 480px
+    //Tablet: desde 481 hasta 1440px
+    //desktop: desde 1025 hasta 1440px
+    //desktop-xl: desde 1440px
+    <div>
+        <h1>formulario de contacto</h1>
+        <p><i>Gracias por tomarte el tiempo par contactar con nostotros y ayudarnos a mejorar</i></p>
+    </div>
+    <form action="https://www.google.es/" method="GET">
+        <fieldset>
+            <label>Nombre
+                <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
+            </label>
+            <label>Email
+                <input type="email" placeholder="Introduce tu Email" required>
+            </label>
+            <label>Edad
+                <input type="number" min="18" placeholder="Introduce tu edad, debes ser mayor de edad" required>
+            </label>
+            <label>¿Qué rol describe mejor tu situación actual?
+                <select name="Selecciona tu rol actual" id="" required>
+                    <option value="ES">Estudiante</option>
+                    <option value="TR">Trabajo a tiempo completo</option>
+                    <option value="FR">Freelance</option>
+                    <option value="BU">Buscando trabajo</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Recomendarías esta página a un conocido?</legend>
+            <label for="radio">Definitivamente sí</label>
+            <input type="radio" name="consentimiento">
+            <label for="radio">Quizás</label>
+            <input type="radio" name="consentimiento">
+            <label for="radio">No estoy seguro</label>
+            <input type="radio" name="consentimiento" id="">
+        </fieldset>
+        <fieldset>
+            <legend>¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)
+            </legend>
+            <label for="checkbox">Proyectos Front-end</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Proyectos Back-end</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Social media (Marketing)</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Desarrollo de videojuegos</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Tutoriales de UX/UI</label>
+            <input type="checkbox" name="" id="">
+            <label for="checkbox">Otros</label>
+            <input type="checkbox" name="" id="">
+        </fieldset>
+        <fieldset>
+            <label>¿Cuando preferirías que te contactásemos?
+            <input type="datetime-local" min="2022-01-01">
+            </label>
+            <label>¿Otros comentarios o sugerencias?
+                <textarea name="" id="" cols="30" rows="10" placeholder="Introduzca sus comentarios..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
