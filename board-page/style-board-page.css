@@ -12,11 +12,12 @@
 .main__style {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content:center;
+    align-items: flex-start;
 }
 
 .input__container {
+    font-family: Oswald;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,12 +52,20 @@
 
 }
 
+#rotation:checked ~ .board__style{
+    transform:rotate(180deg);
+    transform-origin: center;
+    transition:1s ease-out;
+    -webkit-animation: forwards;
+} 
+
 .board__style:hover{
     transform:rotate(180deg);
     transform-origin: center;
     transition:1s ease-out;
     -webkit-animation: forwards;
 }
+
 .column:hover{
     transform:rotateX(180deg);
     transform-origin: center;
