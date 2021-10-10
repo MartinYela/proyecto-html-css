@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------------- HEADER STYLES ------------ */
+@font-face {
+    font-family: Oswald;
+    src: url(/assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+li, a {
+    font-family: Oswald;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.logo__style {
+    max-width: 8vw;
+}
+
+.social{
+    max-width: 2.5vw;
+}
+
+.header__style {
+    /* border: 1vw solid orange; */
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.links-section:hover {
+    border: 1.5vw solid #1b1c20;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.socialLogos__style{
+    display: flex;
+    gap: 1vw;
+    max-height: 10vw;
+}
+
+.socialLogos__style-link:hover{
+    transform: scale(1.25);
+    transition:0.25s ease-in;
+    -webkit-animation: forwards;
+
+}
+
+
+
+/* ------------------- HEADER STYLES ------------------- */
