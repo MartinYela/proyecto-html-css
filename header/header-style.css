@@ -42,7 +42,7 @@ li, a {
 }
 
 .links-section:hover {
-    border: 1.5vw solid #1b1c20;
+    padding: 1.5vw;
     background-color: #1b1c20;
     color: #ffffff;
     text-decoration: underline;
