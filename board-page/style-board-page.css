@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: Oswald;
     src: local("Oswald"), local("Oswald");
@@ -59,19 +60,14 @@
     -webkit-animation: forwards;
 } 
 
-.board__style:hover{
-    transform:rotate(180deg);
-    transform-origin: center;
-    transition:1s ease-out;
-    -webkit-animation: forwards;
-}
 
-.column:hover{
+#rotation:checked ~ * .column{
     transform:rotateX(180deg);
     transform-origin: center;
     transition:1s ease-out;
     -webkit-animation: forwards;
 }
+
 /* CODIGO COMUN A TODO EL SITE */
 .footer__style {
     display: flex;
