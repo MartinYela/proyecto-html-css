@@ -20,18 +20,6 @@ li, a {
     max-width: 10vw;
 }
 
-.social {
-    max-width: 1vw;
-}
-
-.header__style {
-  /* border: 1vw solid orange; */
-    margin: 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .links {
     list-style: none;
@@ -40,7 +28,7 @@ li, a {
     gap: 5vw;
 }
 
-.links-section:hover {
+.links:hover {
     padding: 1.5vw;
     background-color: #1b1c20;
     color: #ffffff;
@@ -157,6 +145,7 @@ li, a {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
 .burger__style {
     display: none;
 }
