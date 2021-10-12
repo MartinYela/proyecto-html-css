@@ -1,0 +1,175 @@
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url("/adds/fuente-oswald/Oswald-Bold.ttf") format('truetype');
+    src: url("/adds/fuente-oswald/Oswald-ExtraLight.ttf") format('truetype');   
+    
+}
+* {
+
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+html {
+     font-size: 62.5%;
+ }
+
+body {
+    position: relative;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald, sans-serif; 
+    font-size: 16px; /* 1rem = 10px */
+    
+
+}
+
+.section__formulario {
+    background-image: url(/adds/photo-1484807352052-23338990c6c6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    color: white;
+    
+}
+
+.section__formulario--div {
+    background: radial-gradient(black 10%, rgba(0, 0, 0, 0.1) );
+    width: 100%;
+   
+}
+
+.section__formulario--titulo {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+  
+}
+
+.titulo {
+    font-style: 'Hey-Comic';
+    src: url("/adds/Hey-Comic.ttf") format('truetype');   
+    font-weight: bolder;
+    font-size: 3.8rem;
+    text-align: center;
+        
+}
+
+.parrafo {
+    font-family:'Oswald';
+    font-weight: 1rem;
+    font-style: italic;
+    width: 70%;
+    text-align: center;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    font-family: comic;
+}
+
+
+.form__field {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label {
+    margin-bottom: 7px;
+}
+
+.form__field--radio {
+    border: none;
+    margin-top: 2em;
+    display: inline;
+}
+
+
+li {
+    list-style: none;
+}
+
+.form__field--radio--div {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.input__form {
+    border: 2px;
+    border-radius: 5px; 
+    width: 60%;
+    max-width: 500px;
+    height: 3em;
+    padding-inline-start: 1rem;
+
+
+}
+
+.input__radio {
+    border: 2px;
+    border-radius: 5px; 
+    width: 2rem;
+    height: 2rem;
+    margin-block: 2rem;
+
+}
+.input__check {
+   margin-top: 5px;
+    margin-right: 20px;
+}
+
+.form__field--check {
+    margin-top: 4rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.field__check {
+    border: none;
+    margin-top: 2em;
+    display: flex; 
+
+}
+
+
+.enviar {
+    margin-top: 3rem;
+    border: 2px;
+    border-radius: 5px; 
+    width: 60%;
+    max-width: 500px;
+    height: 3em;
+    padding-inline-start: 1rem;
+}
+
