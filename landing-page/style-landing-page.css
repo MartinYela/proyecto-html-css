@@ -16,9 +16,11 @@
 .principalBanner__video {
     opacity: 0.5;
     width: 100%;
+    display: block;
 }
 .container__principalBanner--smallText {
     font-size: 0.8rem;
+    height: auto;
 }
 .container__principalBanner--bigText {
     font-size: 1.8rem;
@@ -222,8 +224,13 @@
     color: white;
     background-color: #74ce6a;
     border-radius: 50%;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     margin-right: 1rem;
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
 }
 .card__button {
     background-color: #71ce73;
