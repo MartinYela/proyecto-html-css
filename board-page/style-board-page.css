@@ -1,77 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 @font-face {
-    font-family: Oswald;
-    src: local("Oswald"), local("Oswald");
+  font-family: Oswald;
+  src: local("Oswald"), local("Oswald");
 }
 
 .main__style {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    justify-content: center;
-    align-items:baseline;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .label__style {
- font-family: oswald;
- align-self: flex-start;
+  font-family: oswald;
+  align-self: flex-start;
 }
 
 .board__style {
-    width: 560px;
-    height: 560px;
-    margin: 40px auto;
-    border: 0.5rem solid #000000;
-    box-sizing: content-box;
+  width: 560px;
+  height: 560px;
+  margin: 40px auto;
+  border: 0.5rem solid #000000;
+  box-sizing: content-box;
 }
 
-.board__style .row__style{
-    display: flex;
+.board__style .row__style {
+  display: flex;
 }
 
 .board__style .row__style .column {
-    background-color: #ffffff;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    font-size: 55px;
-    color: #000000;
-    text-shadow: 0px .5px rgb(4, 50, 82);
+  background-color: #ffffff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 55px;
+  color: #000000;
+  text-shadow: 0px 0.5px rgb(4, 50, 82);
 }
 
 .board__style .row__style .black {
-    background-color: #999999;
-
+  background-color: #999999;
 }
 
-#rotation:checked ~ .board__style{
-    transform:rotate(180deg);
-    transform-origin: center;
-    transition:1s ease-out;
-    -webkit-animation: forwards;
-} 
+#rotation:checked ~ .board__style {
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: 1s ease-out;
+  -webkit-animation: forwards;
+}
 
-
-#rotation:checked ~ * .column{
-    transform:rotateX(180deg);
-    transform-origin: center;
-    transition:1s ease-out;
-    -webkit-animation: forwards;
+#rotation:checked ~ * .column {
+  transform: rotateX(180deg);
+  transform-origin: center;
+  transition: 1s ease-out;
+  -webkit-animation: forwards;
 }
 
 /* CODIGO COMUN A TODO EL SITE */
 .footer__style {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color:#1b1c20;
-    font-family: Oswald;
-    color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #1b1c20;
+  font-family: Oswald;
+  color: #ffffff;
 }
