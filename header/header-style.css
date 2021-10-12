@@ -12,12 +12,12 @@
 li, a {
     font-family: Oswald;
     font-weight: 500;
-    color: black;
+    color: #1b1c20;
     text-decoration: none;
 }
 
 .logo__style {
-    max-width: 8vw;
+    max-width: 15vw;
 }
 
 .social{
@@ -64,3 +64,120 @@ li, a {
 
 
 /* ------------------- HEADER STYLES ------------------- */
+
+/* ---------------- HEADER MOBILE STYLES -------------- */
+
+.head__mobile {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu__mobile {
+    margin: 0 30px 0;
+}
+
+.menu__mobile a {
+    text-decoration: none;
+    color: #1b1c20;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+.burger__style {
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#burger {
+    display:none;
+
+}
+
+
+@media only screen and (max-width:480px){
+    .burger__style{
+        display: block;
+        
+    }
+
+    .menu__mobile {
+        display: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .menu__mobile a {
+        display: block;
+    }
+
+    .logo__style {
+        display: flex;
+        justify-content: left;
+    }
+
+    .social-mobile__style {
+        display: flex;
+    }
+
+    .header__style {
+        display: none;
+    }
+    
+    #burger:checked ~ .menu__mobile {
+        display: block;
+
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    .burger__style{
+        display:none;
+    }
+
+    .menu__mobile {
+        display:none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .menu__mobile a {
+        display: block;
+    }
+
+    .logo__style {
+        display: flex;
+        justify-content: left;
+    }
+
+    .social-mobile__style {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    .burger__style{
+        display:none;
+    }
+
+    .menu__mobile {
+        display:none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .menu__mobile a {
+        display: block;
+    }
+
+    .logo__style {
+        display: flex;
+        justify-content: left;
+    }
+
+    .social-mobile__style {
+        display: flex;
+    }
+}
