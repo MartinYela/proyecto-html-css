@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(/assets/fonts/Oswald-VariableFont_wght.ttf);
+    }
+
+li, a {
+    font-family: Oswald;
+    font-weight: 500;
+    color: #1b1c20;
+    text-decoration: none;
+}
+
+.links:hover {
+    padding: 1.5vw;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.socialLogos__style-link:hover {
+    transform: scale(1.25);
+    transition: 0.25s ease-in;
+    -webkit-animation: forwards;
+}
+
+.head__mobile {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    line-height: 70px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-left: -285px;
+}
+
+.links-section:hover {
+    padding: 1.5vw;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.socialLogos__style-link {
+    display: flex;
+    gap: 2vw;
+    max-width: 4vw;
+}
+
+.logo__style {
+    width: 30px;
+    justify-content: left;
+}
+
+.logo__style--big {
+    width: 90px;
+    margin-right: 50%;
+    margin-left: 10px;
+}
+
+.menu__mobile {
+    margin: 50px 0 -50px;
+    display: none;
+    text-align: left;
+    width: 100%;
+    max-height: 0px;
+}
+
+.burger__style {
+    margin: 0 20px 0;
+    font-size: 26px;
+    line-height: 70px;
+    clear: right;
+    display: block;
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked ~ .menu__mobile{
+    display: block;
+}
+#burger:checked ~ .burger__style {
+    display: none;
+}
+#burger:not(:checked) ~ .burger__style--X {
+    display:none;
+}
+
+.menu__mobile--unstyle {
+    list-style: none;
+}
+
+.social-mobile__style {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: -450px;
+}
+.burger__style--X {
+    margin-left: 35px;
+}
