@@ -16,6 +16,45 @@
 </head>
 
 <body>
+    <header>
+        <div class="head__mobile">
+            <img class="logo__style--big" src="adds/html5css3.svg" alt="Logo Html5 y CSS3"/>
+            <input class="checkbox__style" type="checkbox" id="burger"/>
+            <label class="burger__style" for="burger">&#9776;</label>
+            <label class="burger__style--X" for="burger">X</label>
+            
+            <div class="menu__mobile">
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+    
+                    <div class="social-mobile__style">
+                        <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
+                        <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="adds/TW.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="adds/IG.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="adds/YT.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="menu__noBurger">
+                <img class="logo__style--big" src="adds/html5css3.svg" alt="Logo Html5 y CSS3"/>
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+                </div>
+                <div class="social-mobile__style">
+                    <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
+                    <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="adds/TW.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="adds/IG.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="adds/YT.png"/></a>
+                </div>
+            </div>    
+    </header>
+
+    <main class="main">
     <section class="section__formulario">
         <div class="section__formulario--div">
             
@@ -26,8 +65,7 @@
             </div>
             
             <form class="formulario" action="https://www.google.es/" method="GET" id="formu">
-                <!----> si damos un mismo nombre a la id del form y al altribujo form del select, asocimos las opciones con el formulario
-                <!----> el method get muestra los datos de entrada y action nos lleva a donde digamos cuando demos a submit
+    
                 
                 <fieldset class="form__field">
                     <label class="label" for="nombre">Nombre</label>
@@ -36,7 +74,7 @@
                 
                 <fieldset class="form__field">
                     <label class="label" for="email">Email</label>
-                    <input class="input__form" type="email" placeholder="Introduce tu email" pattern=".+@globex\.com" title="revisa que contenga @ y un dominio válido" required>
+                    <input class="input__form" type="email" placeholder="Introduce tu email"  title="revisa que contenga @ y un dominio válido" required>
                 </fieldset>
                 
                 <fieldset class="form__field">
@@ -130,7 +168,10 @@
                 </form>
         </div>
     </section>
-
+</main>
+<footer>
+    <p class="footer__style">Copyright © Martín Alfredo Yela, Elena Rodriguez y Manu Lope,  2021</p>
+</footer>
 </body>
 
 </html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(assets/Oswald-VariableFont_wght.ttf);
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: baseline;
+}
+
+.head__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo {
+   height: 70px; 
+   margin-left: 1em; 
+
+}
+
+.container__burger {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.burger {
+  
+    display: flex;
+    align-self: flex-end;
+    font-size: 26px;
+    line-height: 70px;
+    clear: right;
+
+}
+
+
+.burger__X {
+    
+}
+
+.social-mobile__style {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li, a {
+    font-family: Oswald;
+    
+    color: #1b1c20;
+    text-decoration: none;
+}
+
+.links:hover {
+    padding: 1.5vw;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.socialLogos__style-link:hover {
+    transform: scale(1.25);
+    transition: 0.25s ease-in;
+    -webkit-animation: forwards;
+}
+
+
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+  
+}
+
+.links-section:hover {
+    padding: 1.5vw;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.icono__link {
+    display: flex;
+    gap: 2vw;
+    max-width: 4vw;
+}
+
+.logo__style {
+    width: 30px;
+    justify-content: left;
+}
+
+
+
+.menu__mobile {
+   
+    display: none;
+    text-align: left;
+  
+   
+}
+
+
+
+.burger__style {
+
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked ~ .menu__mobile{
+    display: block;
+}
+#burger:checked ~ .burger__style {
+    display: none;
+}
+#burger:not(:checked) ~ .burger__style--X {
+    display:none;
+}
+
+.nav__redes {
+    list-style: none;
+}
+
+.icono {
+    width: 0em;
+    display: flex;
+    justify-content: center;
+
+   
+}
