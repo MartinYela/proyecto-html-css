@@ -298,14 +298,13 @@
             
             .head__mobile {
                 display: flex;
-                justify-content: space-around;
+                flex-wrap: wrap;
                 align-content: center;
                 line-height: 70px;
+                justify-content: space-between;
+                margin-left: 10%;
             }
             
-            .links {
-                margin-left: -285px;
-            }
             
             .socialLogos__style-link {
                 display: flex;
@@ -319,8 +318,7 @@
             
             .logo__style--big {
                 width: 90px;
-                margin-right: 50%;
-                margin-left: 10px;
+                margin-left: -10px;
             }
             
             .menu__mobile {
@@ -345,6 +343,7 @@
             
             #burger:checked ~ .menu__mobile{
                 display: block;
+                margin-bottom: 300px;
             }
             #burger:checked ~ .burger__style {
                 display: none;
@@ -356,40 +355,16 @@
             
             .social-mobile__style {
                 display: flex;
-                justify-content: center;
                 gap: 30px;
-                margin-left: -450px;
             }
-            .burger__style--X {
-                margin-left: 35px;
+            .burger__style--X{
+                margin-right: 5%;
             }
             
 
 
             /* RESPONSIVE */
-            @media (min-width: 375px){
-                .social-mobile__style{
-                    margin-left: -550px;
-                }
-                .links {
-                    margin-left: -340px;
-                }
-                .burger__style--X {
-                    margin-left: 65px;
-                }
-            }
-
-            @media (min-width: 425px){
-                .social-mobile__style{
-                    margin-left: -620px;
-                }
-                .links {
-                    margin-left: -380px;
-                }
-                .burger__style--X {
-                    margin-left: 85px;
-                }
-            }
+            
 
 @media (min-width: 480px) {
     /* CARDS FLIP */
@@ -418,29 +393,8 @@
         justify-content: space-around;
     }
 
-            .social-mobile__style{
-                 margin-left: -740px;
-            }
-            .links {
-                margin-left: -440px;
-            }
-            .burger__style--X {
-                margin-left: 110px;
-            }
-}
-
-
-            @media (min-width: 580px){
-                .social-mobile__style{
-                    margin-left: -920px;
-                }
-                .links {
-                    margin-left: -540px;
-                }
-                .burger__style--X {
-                    margin-left: 160px;
-                }
-            }
+            
+} 
 
 @media (min-width: 680px){
     /* PRINCIPAL BANNER */
@@ -456,49 +410,6 @@
         gap: 30px;
     }
 }
-
-
-
-                    @media (min-width: 768px){
-                        .social-mobile__style{
-                            margin-left: -1270px;
-
-                        }
-                        .links {
-                            margin-left: -730px;
-                            font-size: 1.5rem;
-                        }
-                        .burger__style--X {
-                            margin-left: 220px;
-                        }
-                        .logo__style {
-                            width: 50px;
-                            height: 50px;
-                        }
-                        .logo__style--big {
-                            width: 130px;
-                        }
-                        .menu_mobile--ubicar {
-                            margin-top: 30px;
-                        }
-                    }
-
-                    @media (min-width: 900px){
-                        .social-mobile__style{
-                            margin-left: -1450px;
-                        }
-                        .links {
-                            margin-left: -810px;
-                        }
-                        .burger__style--X {
-                            margin-left: 270px;
-                        }
-                        .logo__style--big {
-                            margin-left: 50px;
-                        }
-                    }
-
-
 
 
 @media (min-width: 1024px){
@@ -534,9 +445,6 @@
     .card__price--textBig {
         margin-bottom: 20px;
     }
-
-
-
                     .head__mobile {
                         display: none;
                     }
@@ -558,11 +466,11 @@
                     .menu__noBurger{
                         display: flex;
                         justify-content: space-between;
-                        margin-top: 10px;
+                        margin-bottom: 10px;
                     }
                     .menu_mobile--ubicar {
                         display: inline-flex;
-                        gap: 30px;
+                        gap: 60px;
                         align-items: center;
                         align-content: center;
                         margin-top: 0;
