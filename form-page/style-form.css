@@ -12,112 +12,6 @@
     font-family: 'Oswald';
 }
 
-
-
-
-    
-
-
-.menu__noBurger {
-    display: none;
-}
-
-li, a {
-    font-family: Oswald;
-    font-weight: 500;
-    color: #1b1c20;
-    text-decoration: none;
-}
-
-.links:hover {
-    padding: 1.5vw;
-    background-color: #1b1c20;
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.socialLogos__style-link:hover {
-    transform: scale(1.25);
-    transition: 0.25s ease-in;
-    -webkit-animation: forwards;
-}
-
-.head__mobile {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    line-height: 70px;
-}
-
-.links {
-    margin-left: -285px;
-}
-
-/* .links-section:hover {
-    padding: 1.5vw;
-    background-color: #1b1c20;
-    color: #ffffff;
-    text-decoration: underline;
-} */
-
-.socialLogos__style-link {
-    display: flex;
-    gap: 2vw;
-    max-width: 4vw;
-}
-
-.logo__style {
-    width: 30px;
-}
-
-.logo__style--big {
-    width: 90px;
-    margin-right: 50%;
-    margin-left: 10px;
-}
-
-.menu__mobile {
-    margin: 50px 0 -50px;
-    display: none;
-    text-align: left;
-    width: 100%;
-    max-height: 0px;
-}
-
-.burger__style {
-    margin: 0 20px 0;
-    font-size: 26px;
-    line-height: 70px;
-    clear: right;
-    display: block;
-}
-
-#burger {
-    display: none;
-}
-
-#burger:checked ~ .menu__mobile{
-    display: block;
-}
-#burger:checked ~ .burger__style {
-    display: none;
-}
-#burger:not(:checked) ~ .burger__style--X {
-    display:none;
-}
-
-
-.social-mobile__style {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-left: -450px;
-}
-.burger__style--X {
-    margin-left: 35px;
-}
-
-
 html {
     font-size: 62.5%;
 }
@@ -218,7 +112,7 @@ html {
 }
 
 
-li {
+.liForm {
     list-style: none;
     color: white;
 }
@@ -294,90 +188,104 @@ li {
     text-align: center;
     }
 
-    @media (min-width: 375px){
-        .social-mobile__style{
-            margin-left: -550px;
+
+        /* HEADER */
+
+
+        .menu__noBurger {
+            display: none;
         }
-        .links {
-            margin-left: -340px;
+        
+        li, .textA {
+            font-family: Oswald;
+            font-weight: 500;
+            color: #1b1c20;
+            text-decoration: none;
+            font-size: 2rem;
         }
-        .burger__style--X {
-            margin-left: 65px;
+        
+        .links:hover {
+            padding: 1.5vw;
+            background-color: #1b1c20;
+            color: #ffffff;
+            text-decoration: underline;
         }
-    }
-    
-    @media (min-width: 425px){
-        .social-mobile__style{
-            margin-left: -620px;
+        
+        .socialLogos__style-link:hover {
+            transform: scale(1.25);
+            transition: 0.25s ease-in;
+            -webkit-animation: forwards;
         }
-        .links {
-            margin-left: -380px;
+        
+        .head__mobile {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            line-height: 70px;
+            justify-content: space-between;
+            margin-left: 10%;
         }
-        .burger__style--X {
-            margin-left: 85px;
+        
+        
+        .socialLogos__style-link {
+            display: flex;
+            gap: 2vw;
+            max-width: 4vw;
         }
-    }
-    @media (min-width: 480px){
-        .social-mobile__style{
-            margin-left: -740px;
-        }
-        .links {
-            margin-left: -440px;
-        }
-        .burger__style--X {
-            margin-left: 110px;
-        }
-    }
-    @media (min-width: 580px){
-        .social-mobile__style{
-            margin-left: -920px;
-        }
-        .links {
-            margin-left: -540px;
-        }
-        .burger__style--X {
-            margin-left: 160px;
-        }
-    }
-    @media (min-width: 768px){
-        .social-mobile__style{
-            margin-left: -1270px;
-    
-        }
-        .links {
-            margin-left: -730px;
-            font-size: 1.5rem;
-        }
-        .burger__style--X {
-            margin-left: 220px;
-        }
+        
         .logo__style {
-            width: 50px;
-            height: 50px;
+            width: 30px;
         }
+        
         .logo__style--big {
-            width: 130px;
+            width: 90px;
+            margin-left: -10px;
         }
-        .menu_mobile--ubicar {
-            margin-top: 30px;
+        
+        .menu__mobile {
+            margin: 50px 0 -50px;
+            display: none;
+            text-align: left;
+            width: 100%;
+            max-height: 0px;
         }
-    }
-    @media (min-width: 900px){
-        .social-mobile__style{
-            margin-left: -1450px;
+        
+        .burger__style {
+            margin: 0 20px 0;
+            font-size: 26px;
+            line-height: 70px;
+            clear: right;
+            display: block;
         }
-        .links {
-            margin-left: -810px;
+        
+        #burger {
+            display: none;
         }
-        .burger__style--X {
-            margin-left: 270px;
+        
+        #burger:checked ~ .menu__mobile{
+            display: block;
+            margin-bottom: 300px;
         }
-        .logo__style--big {
-            margin-left: 50px;
+        #burger:checked ~ .burger__style {
+            display: none;
         }
-    }
-    
-    @media (min-width: 1024px){
+        #burger:not(:checked) ~ .burger__style--X {
+            display:none;
+        }
+        
+        
+        .social-mobile__style {
+            display: flex;
+            gap: 30px;
+        }
+        .burger__style--X{
+            margin-right: 10%;
+        }
+
+
+
+        @media (min-width: 1024px){
+
         .head__mobile {
             display: none;
         }
@@ -399,13 +307,13 @@ li {
         .menu__noBurger{
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .menu_mobile--ubicar {
             display: inline-flex;
-            gap: 30px;
+            gap: 60px;
             align-items: center;
             align-content: center;
             margin-top: 0;
         }
-    }
+        }
