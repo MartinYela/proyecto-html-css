@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: Oswald;
-    src: local("Oswald"), local("Oswald");
+  font-family: Oswald;
+  src: local("Oswald"), local("Oswald");
 }
 
 .main__style {
@@ -251,5 +251,4 @@
     .board__style .row__style .black {
         background-color: #999999;
     }
-    
 }
