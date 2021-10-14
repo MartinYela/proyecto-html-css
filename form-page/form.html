@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style-form.css">
+    <link rel="stylesheet" href="/adds/fuente-oswald/Oswald-Bold.ttf" type="text/css">
+    <link rel="stylesheet" href="/adds/fuente-oswald/Oswald-ExtraLight.ttf" type="text/css">
+    <link rel="stylesheet" href="/adds/Hey-Comic.ttf" type="text/css">
+    <link rel="stylesheet" href="header-style.css" type="text/css">
+    <link rel="stylesheet" href="footer-style.css" type="text/css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="head__mobile">
+            <img class="logo__style--big" src="adds/html5css3.svg" alt="Logo Html5 y CSS3"/>
+            <input class="checkbox__style" type="checkbox" id="burger"/>
+            <label class="burger__style" for="burger">&#9776;</label>
+            <label class="burger__style--X" for="burger">X</label>
+            
+            <div class="menu__mobile">
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+    
+                    <div class="social-mobile__style">
+                        <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
+                        <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="adds/TW.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="adds/IG.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="adds/YT.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="menu__noBurger">
+                <img class="logo__style--big" src="adds/html5css3.svg" alt="Logo Html5 y CSS3"/>
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+                </div>
+                <div class="social-mobile__style">
+                    <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
+                    <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="adds/TW.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="adds/IG.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="adds/YT.png"/></a>
+                </div>
+            </div>    
+    </header>
+
+    <main class="main">
+    <section class="section__formulario">
+        <div class="section__formulario--div">
+            
+            <div class="section__formulario--titulo">
+                <h1 class="titulo">Formulario de contacto</h1>
+                <p class="parrafo">Gracias por tomarte el tiempo para contactar con nostotros y ayudarnos
+                        a mejorar</p>
+            </div>
+            
+            <form class="formulario" action="https://www.google.es/" method="GET" id="formu">
+    
+                
+                <fieldset class="form__field">
+                    <label class="label" for="nombre">Nombre</label>
+                    <input class="input__form" type="text" name="nombre" placeholder="Introduce tu nombre" required>
+                </fieldset>
+                
+                <fieldset class="form__field">
+                    <label class="label" for="email">Email</label>
+                    <input class="input__form" type="email" placeholder="Introduce tu email"  title="revisa que contenga @ y un dominio válido" required>
+                </fieldset>
+                
+                <fieldset class="form__field">
+                    <label class="label" for="number">Edad</label>
+                    <input class="input__form" type="number" min="18" placeholder="Introduce tu edad, debes ser mayor de edad" required>
+                </fieldset>   
+                
+                <fieldset class="form__field">
+                    <label class="label" for="userrol" >¿Qué rol describe mejor tu situación actual?</label>
+                        <select class="input__form" name="userrol" form="formu"  required>
+                            <!--placeholder no es un atributo disponible para select. Por eso usamos una opción que desabilitamos-->
+                            
+                            <option value="" disabled selected>Elige una opición</option>
+                            <option value="ES">Estudiante</option>
+                            <option value="TR">Trabajo a tiempo completo</option>
+                            <option value="FR">Freelance</option>
+                            <option value="BU">Buscando trabajo</option>
+                        </select>
+                </fieldset> 
+              
+                <fieldset class="form__field--radio">
+                    <legend align="center">¿Recomendarías esta página a un conocido?</legend>
+                    <div class="form__field--radio--div">
+                        <label for="radio" class="form__field--nombre">Definitivamente sí</label>
+                        <input class="input__radio" type="radio" name="consentimiento">
+                        <label for="radio" class="form__field--nombre">Quizás</label>
+                        <input class="input__radio" type="radio" name="consentimiento">
+                        <label for="radio" class="form__field--nombre">No estoy seguro</label>
+                        <input class="input__radio" type="radio" name="consentimiento" id="">
+                    </div>
+                </fieldset>
+                
+                <fieldset class="form__field--check">
+                    <legend align="center">¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</legend>
+                    <ul>
+                        <li>
+                            <fieldset class="field__check">
+                                <input class="input__check" type="checkbox" name="checkbox" id="">
+                                <label class="label__checkbox" for="checkbox">Proyectos Front-end</label>
+                
+                            </fieldset>
+                        </li>
+                        <li>
+                        <fieldset class="field__check">
+                            <input class="input__check" type="checkbox" name="checkbox" id="">
+                            <label class="label" for="checkbox">Proyectos Back-end</label>
+                        </fieldset>
+                        </li>
+                        <li>
+                            <fieldset class="field__check">
+                                <input class="input__check" type="checkbox" name="checkbox" id="">
+                                <label class="label" for="checkbox">Social media (Marketing)</label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset class="field__check">
+                                <input class="input__check" type="checkbox" name="checkbox" id="">
+                                <label class="label" for="checkbox">Desarrollo de videojuegos</label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset class="field__check">
+                                <input class="input__check" type="checkbox" name="checkbox" id="">
+                                <label class="label" for="checkbox">Tutoriales de UX/UI</label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset class="field__check">
+                                <input class="input__check" type="checkbox" name="checkbox" id="">
+                                <label class="label" for="checkbox">Otros</label>
+                            </fieldset>
+                        </li>
+                    </ul>
+                </fieldset>
+                    
+                <fieldset class="form__field">
+                    <label class="label">¿Cuando preferirías que te contactásemos?</label>
+                    <input class="input__form" type="datetime-local" min="2022-01-01">
+                </fieldset>
+                
+                <fieldset class="form__field">
+                    <label class="label" for="comentarios">¿Otros comentarios o sugerencias?</label>
+                    <textarea class="input__form" name="comentarios" id="" cols="30" rows="10"
+                        placeholder="Introduzca sus comentarios..."></textarea>
+                </fieldset>
+                
+                <fieldset class="form__field">
+                    <input class="enviar" type="submit" value="Enviar">
+                </fieldset>
+                
+                </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p class="footer__style">Copyright © Martín Alfredo Yela, Elena Rodriguez y Manu Lope,  2021</p>
+</footer>
+</body>
+
+</html>
