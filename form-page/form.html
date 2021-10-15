@@ -25,9 +25,9 @@
             
             <div class="menu__mobile">
                 <div class="menu_mobile--ubicar">
-                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
-                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
-                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+                        <p class="menu__mobile--unstyle"><a class="links textA" href="../index.html">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links textA" href="../board-page/board-page.html">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links textA" href="../form-page/form.html">CONTACT</a></p>
     
                     <div class="social-mobile__style">
                         <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
@@ -41,9 +41,9 @@
             <div class="menu__noBurger">
                 <img class="logo__style--big" src="adds/html5css3.svg" alt="Logo Html5 y CSS3"/>
                 <div class="menu_mobile--ubicar">
-                        <p class="menu__mobile--unstyle"><a class="links" href="HOME">HOME</a></p>
-                        <p class="menu__mobile--unstyle"><a  class="links" href="BOARD">BOARD</a></p>
-                        <p class="menu__mobile--unstyle"><a  class="links" href="CONTACT">CONTACT</a></p>
+                        <p class="menu__mobile--unstyle"><a class="links textA" href="../index.html">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links textA" href="../board-page/board-page.html">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links textA" href="../form-page/form.html">CONTACT</a></p>
                 </div>
                 <div class="social-mobile__style">
                     <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="adds/FB.png"/></a>
@@ -69,22 +69,22 @@
                 
                 <fieldset class="form__field">
                     <label class="label" for="nombre">Nombre</label>
-                    <input class="input__form" type="text" name="nombre" placeholder="Introduce tu nombre" required>
+                    <input class="input__form" type="text" id="nombre" placeholder="Introduce tu nombre" required>
                 </fieldset>
                 
                 <fieldset class="form__field">
                     <label class="label" for="email">Email</label>
-                    <input class="input__form" type="email" placeholder="Introduce tu email"  title="revisa que contenga @ y un dominio válido" required>
+                    <input class="input__form" id='email' type="email" placeholder="Introduce tu email"  title="revisa que contenga @ y un dominio válido" required>
                 </fieldset>
                 
                 <fieldset class="form__field">
                     <label class="label" for="number">Edad</label>
-                    <input class="input__form" type="number" min="18" placeholder="Introduce tu edad, debes ser mayor de edad" required>
+                    <input class="input__form" id='number' type="number" min="18" placeholder="Introduce tu edad, debes ser mayor de edad" required>
                 </fieldset>   
                 
                 <fieldset class="form__field">
                     <label class="label" for="userrol" >¿Qué rol describe mejor tu situación actual?</label>
-                        <select class="input__form" name="userrol" form="formu"  required>
+                        <select class="input__form" id="userrol" form="formu"  required>
                             <!--placeholder no es un atributo disponible para select. Por eso usamos una opción que desabilitamos-->
                             
                             <option value="" disabled selected>Elige una opición</option>
@@ -98,66 +98,66 @@
                 <fieldset class="form__field--radio">
                     <legend align="center">¿Recomendarías esta página a un conocido?</legend>
                     <div class="form__field--radio--div">
-                        <label for="radio" class="form__field--nombre">Definitivamente sí</label>
-                        <input class="input__radio" type="radio" name="consentimiento">
-                        <label for="radio" class="form__field--nombre">Quizás</label>
-                        <input class="input__radio" type="radio" name="consentimiento">
-                        <label for="radio" class="form__field--nombre">No estoy seguro</label>
-                        <input class="input__radio" type="radio" name="consentimiento" id="">
+                        <label for="consentimiento1" class="form__field--nombre">Definitivamente sí</label>
+                        <input class="input__radio" type="radio" id="consentimiento1">
+                        <label for="consentimiento2" class="form__field--nombre">Quizás</label>
+                        <input class="input__radio" type="radio" id="consentimiento2">
+                        <label for="consentimiento3" class="form__field--nombre">No estoy seguro</label>
+                        <input class="input__radio" type="radio" id="consentimiento3">
                     </div>
                 </fieldset>
                 
                 <fieldset class="form__field--check">
                     <legend align="center">¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</legend>
                     <ul>
-                        <li>
+                        <li class="liForm">
                             <fieldset class="field__check">
-                                <input class="input__check" type="checkbox" name="checkbox" id="">
-                                <label class="label__checkbox" for="checkbox">Proyectos Front-end</label>
+                                <input class="input__check" type="checkbox" id="checkbox1">
+                                <label class="label__checkbox" for="checkbox1">Proyectos Front-end</label>
                 
                             </fieldset>
                         </li>
-                        <li>
+                        <li class="liForm">
                         <fieldset class="field__check">
-                            <input class="input__check" type="checkbox" name="checkbox" id="">
-                            <label class="label" for="checkbox">Proyectos Back-end</label>
+                            <input class="input__check" type="checkbox"  id="checkbox2">
+                            <label class="label" for="checkbox2">Proyectos Back-end</label>
                         </fieldset>
                         </li>
-                        <li>
+                        <li class="liForm">
                             <fieldset class="field__check">
-                                <input class="input__check" type="checkbox" name="checkbox" id="">
-                                <label class="label" for="checkbox">Social media (Marketing)</label>
+                                <input class="input__check" type="checkbox" id="checkbox3" >
+                                <label class="label" for="checkbox3">Social media (Marketing)</label>
                             </fieldset>
                         </li>
-                        <li>
+                        <li class="liForm">
                             <fieldset class="field__check">
-                                <input class="input__check" type="checkbox" name="checkbox" id="">
-                                <label class="label" for="checkbox">Desarrollo de videojuegos</label>
+                                <input class="input__check" type="checkbox" id="checkbox4">
+                                <label class="label" for="checkbox4">Desarrollo de videojuegos</label>
                             </fieldset>
                         </li>
-                        <li>
+                        <li class="liForm">
                             <fieldset class="field__check">
-                                <input class="input__check" type="checkbox" name="checkbox" id="">
-                                <label class="label" for="checkbox">Tutoriales de UX/UI</label>
+                                <input class="input__check" type="checkbox" id="checkbox5">
+                                <label class="label" for="checkbox5">Tutoriales de UX/UI</label>
                             </fieldset>
                         </li>
-                        <li>
+                        <li class="liForm">
                             <fieldset class="field__check">
-                                <input class="input__check" type="checkbox" name="checkbox" id="">
-                                <label class="label" for="checkbox">Otros</label>
+                                <input class="input__check" type="checkbox" id="checkbox6">
+                                <label class="label" for="checkbox6">Otros</label>
                             </fieldset>
                         </li>
                     </ul>
                 </fieldset>
                     
                 <fieldset class="form__field">
-                    <label class="label">¿Cuando preferirías que te contactásemos?</label>
-                    <input class="input__form" type="datetime-local" min="2022-01-01">
+                    <label class="label" for="date">¿Cuando preferirías que te contactásemos?</label>
+                    <input class="input__form" type="datetime-local" min="2022-01-01" id="date">
                 </fieldset>
                 
                 <fieldset class="form__field">
                     <label class="label" for="comentarios">¿Otros comentarios o sugerencias?</label>
-                    <textarea class="input__form" name="comentarios" id="" cols="30" rows="10"
+                    <textarea class="input__form" id="comentarios" cols="30" rows="10"
                         placeholder="Introduzca sus comentarios..."></textarea>
                 </fieldset>
                 
