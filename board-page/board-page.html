@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style-board-page.css" rel="stylesheet">
+    <title>BOARD</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="head__mobile">
+            <img class="logo__style--big" src="./assets/html5css3.svg" alt="Logo Html5 y CSS3"/>
+            <input class="checkbox__style" type="checkbox" id="burger"/>
+            <label class="burger__style" for="burger">&#9776;</label>
+            <label class="burger__style--X" for="burger">X</label>
+            
+            <div class="menu__mobile">
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="../index.html">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="../board-page/board-page.html">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="../form-page/form.html">CONTACT</a></p>
+    
+                    <div class="social-mobile__style">
+                        <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="./assets/FB.png"/></a>
+                        <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="./assets/TW.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="./assets/IG.png"/></a>
+                        <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="./assets/YT.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="menu__noBurger">
+                <img class="logo__style--big" src="./assets/html5css3.svg" alt="Logo Html5 y CSS3"/>
+                <div class="menu_mobile--ubicar">
+                        <p class="menu__mobile--unstyle"><a class="links" href="../index.html">HOME</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="./board-page.html">BOARD</a></p>
+                        <p class="menu__mobile--unstyle"><a  class="links" href="../form-page/form.html">CONTACT</a></p>
+                </div>
+                <div class="social-mobile__style">
+                    <a class="socialLogos__style-link" href="https://www.facebook.com"><img class="logo__style" src="./assets/FB.png"/></a>
+                    <a class="socialLogos__style-link" href="https://twitter.com"><img class="logo__style" src="./assets/TW.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://instagram.com"><img class="logo__style" src="./assets/IG.png"/></a>
+                    <a class="socialLogos__style-link"  href="https://youtube.com"><img class="logo__style" src="./assets/YT.png"/></a>
+                </div>
+                
+            </div>
+    </header>
+    <main class="main__style">
+        <label class="label__style" for="rotation">¿Quieres jugar con fichas negras?</label>
+        <input class="input__style" id="rotation" name="rotation" type="checkbox">
+        <!-- debe seer hermano directo del BOARD y de column -->
+        <div class="board__style">
+            <div class="row__style">
+                <!-- BLACK -->
+                <div class="column">♜</div>
+                <div class="column black">♞</div>
+                <div class="column">♝</div>
+                <div class="column black">♚</div>
+                <div class="column">♛</div>
+                <div class="column black">♝</div>
+                <div class="column">♞</div>
+                <div class="column black">♜</div>
+            </div>
+            <div class="row__style">
+                <!-- BLACK PAWNS-->
+                <div class="column black">♟</div>
+                <div class="column">♟</div>
+                <div class="column black">♟</div>
+                <div class="column">♟</div>
+                <div class="column black">♟</div>
+                <div class="column">♟</div>
+                <div class="column black">♟</div>
+                <div class="column">♟</div>
+            </div>
+            <div class="row__style">
+                <!-- row 3 -->
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+            </div>
+            <div class="row__style">
+                <!-- row 4-->
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row__style">
+                <!-- row 5-->
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+            </div>
+            <div class="row__style">
+                <!-- row 6-->
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+                <div class="column black"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row__style">
+                <!-- WHITE PAWNS-->
+                <div class="column">♙</div>
+                <div class="column black">♙</div>
+                <div class="column">♙</div>
+                <div class="column black">♙</div>
+                <div class="column">♙</div>
+                <div class="column black">♙</div>
+                <div class="column">♙</div>
+                <div class="column black">♙</div>
+            </div>
+            <div class="row__style">
+                <!-- WHITES -->
+                <div class="column black">♖</div>
+                <div class="column">♘</div>
+                <div class="column black">♗</div>
+                <div class="column">♔</div>
+                <div class="column black">♕</div>
+                <div class="column">♗</div>
+                <div class="column black">♘</div>
+                <div class="column">♖</div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p class="footer__style">Copyright © Martín Alfredo Yela, Elena Rodriguez y Manuel Lope 2021</p>
+    </footer>
+</body>
+
+</html>
